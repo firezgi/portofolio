@@ -67,12 +67,43 @@
                 >
               </li>
               <li class="nav-item border-light border-bottom">
-                <a class="nav-link active" href="/contact-hab.html">Contact Juan</a>
+                <a class="nav-link active" href="/contact-hab.html">Contact Habteab</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <div>
+        <div>
+          <h1>Contact Habteab</h1>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name*</label>
+              <input type="text" name="name" id="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject*</label>
+              <input type="text" name="subject" id="subject" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea name="message" id="message" class="form-control" row="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mb-3" onClick="sendContactForm()">Submit</button>
+          </form>
+        </div>
+      </div>
+      <footer class="row bg-primary p-3 text-center col-lg-8 justify-content-around mb-3">
+        <div class="col-md-3 text-light">
+          1501 almaden expressway apt 6153 San Jose,CA 95125
+        </div>
+        <div class="col-md-3 text-light">
+          (832)206-8163
+        </div>
+        <div class="col-md-3 nav-item">
+          <a class="nav-link text-light "href="/contact-hab.html">keshi2017@gmail.com</a>
+        </div>  
+      </footer>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -85,5 +116,18 @@
       crossorigin="anonymous"
       async
     ></script>
+    <script>
+      const sendContactForm =()=>{
+        const name = document.getElementById('name').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        let mailto = `mailto:keshi2017@gmail.com`;
+        mailto += `?subject=${subject}`;
+        mailto +=`& body=${message}`;
+        window.open(mailto);    
+        };
+    </script>
+
   </body>
 </html>
