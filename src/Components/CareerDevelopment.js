@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Decidr from "../images/Decidr.png";
 import ECard from "../images/E-Card.png";
 import Hounted from "../images/HountedHouseGame.png";
@@ -28,26 +29,28 @@ function CareerDevelopment() {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse mt-lg-5" id="mainMenu">
-            <ul class="navbar-nav">
-              <li class="nav-item border-light border-bottom">
-                <a class="nav-link "  href="/"
-                  >Profile</a
-                >
-              </li>
-              <li class="nav-item border-light border-bottom">
-                <a class="nav-link active" aria-current="page" href="career-development.html"
-                  >Career Development</a
-                >
+          <ul class="navbar-nav ">
                 <li class="nav-item border-light border-bottom">
-                  <a class="nav-link" href="Education.html"
-                    >Education</a
-                  >
+                  <Link to={`/`}>
+                  <p class="nav-link " aria-current="page" >Profile</p>
+                  </Link>                  
                 </li>
-              </li>
-              <li class="nav-item border-light border-bottom">
-                <a class="nav-link" href="/contact-hab.html">Contact Habteab</a>
-              </li>
-            </ul>
+                <li class="nav-item border-light border-bottom">
+                <Link to={`/CareerDevelopment`}>
+                  <p class="nav-link active " aria-current="page" >CareerDevelopment</p>
+                  </Link>    
+                </li>
+                <li class="nav-item border-light border-bottom">
+                  <Link to={`/Education`}>
+                  <p class="nav-link " aria-current="page">Education</p>
+                  </Link>                  
+                   </li>
+                   <li class="nav-item border-light border-bottom">
+                  <Link to={`/ContactHab`}>
+                  <p class="nav-link " aria-current="page">Contact Habteab</p>                
+                  </Link>
+                </li>
+              </ul>
           </div>
         </div>
       </nav>

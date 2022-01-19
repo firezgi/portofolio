@@ -1,5 +1,6 @@
 import React from 'react';
-import hab from "../images/hab.png"
+import hab from "../images/hab.png";
+import {Link} from "react-router-dom";
 
 function Profile() {
   return <div>
@@ -27,22 +28,24 @@ function Profile() {
             <div class="collapse navbar-collapse mt-lg-5" id="mainMenu">
               <ul class="navbar-nav ">
                 <li class="nav-item border-light border-bottom">
-                  <a class="nav-link active" aria-current="page" href="/"
-                    >Profile</a
-                  >
+                  <Link to={`/`}>
+                  <p class="nav-link active" aria-current="page" >Profile</p>
+                  </Link>                  
                 </li>
                 <li class="nav-item border-light border-bottom">
-                  <a class="nav-link" href="/career-development.html"
-                    >Career Development</a
-                  >
+                <Link to={`/CareerDevelopment`}>
+                  <p class="nav-link " aria-current="page" >CareerDevelopment</p>
+                  </Link>    
                 </li>
                 <li class="nav-item border-light border-bottom">
-                  <a class="nav-link" href="Education.html">Education</a>
-                </li>
-                <li class="nav-item border-light border-bottom">
-                  <a class="nav-link" href="/contact-hab.html"
-                    >Contact Habteab</a
-                  >
+                  <Link to={`/Education`}>
+                  <p class="nav-link " aria-current="page">Education</p>
+                  </Link>                  
+                   </li>
+                   <li class="nav-item border-light border-bottom">
+                  <Link to={`/ContactHab`}>
+                  <p class="nav-link " aria-current="page">Contact Habteab</p>                
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -87,6 +90,7 @@ function Profile() {
               <li>Strong knowledge of Microsoft Office suite</li>
               <li>
                 Outstanding knowledge of web programming skills including:
+                
                 <br />
                 -React<br />
                 -React Native<br />
