@@ -36,7 +36,7 @@ function Education() {
                   </Link>    
                 </li>
                 <li class="nav-item border-light border-bottom">
-                  <Link to={`/Education`}>
+                  <Link to={'/Education'}>
                   <p class="nav-link active" aria-current="page">Education</p>
                   </Link>                  
                    </li>
