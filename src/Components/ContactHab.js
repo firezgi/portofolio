@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 function ContactHab() {
   return <div>
-      <div class="container">
+      <div className="container">
       <nav
-        class="navbar navbar-expand-lg navbar-dark bg-primary flex-wrap h-100 align-content-center"
+        className="navbar navbar-expand-lg navbar-dark bg-primary flex-wrap h-100 align-content-center"
       >
-        <div class="container-fluid">
-          <a class="navbar-brand text-light p-lg-2" href="/">
-            <span class="fs-3">Habteab Firezgi</span><br />
+        <div className="container-fluid">
+          <a className="navbar-brand text-light p-lg-2" href="/">
+            <span className="fs-3">Habteab Firezgi</span><br />
             <small>Motivated and Dynamic Front End Developer</small>
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#mainMenu"
@@ -21,28 +21,28 @@ function ContactHab() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse mt-lg-5" id="mainMenu">
-          <ul class="navbar-nav ">
-                <li class="nav-item border-light border-bottom">
+          <div className="collapse navbar-collapse mt-lg-5" id="mainMenu">
+          <ul className="navbar-nav ">
+                <li className="nav-item border-light border-bottom">
                   <Link to={`/`}>
-                  <p class="nav-link" aria-current="page" >Profile</p>
+                  <p className="nav-link" aria-current="page" >Profile</p>
                   </Link>                  
                 </li>
-                <li class="nav-item border-light border-bottom">
+                <li className="nav-item border-light border-bottom">
                 <Link to={`/CareerDevelopment`}>
-                  <p class="nav-link " aria-current="page" >CareerDevelopment</p>
+                  <p className="nav-link " aria-current="page" >CareerDevelopment</p>
                   </Link>    
                 </li>
-                <li class="nav-item border-light border-bottom">
+                <li className="nav-item border-light border-bottom">
                   <Link to={`/Education`}>
-                  <p class="nav-link " aria-current="page">Education</p>
+                  <p className="nav-link " aria-current="page">Education</p>
                   </Link>                  
                    </li>
-                <li class="nav-item border-light border-bottom">
+                <li className="nav-item border-light border-bottom">
                   <Link to={`/ContactHab`}>
-                  <p class="nav-link active" aria-current="page">Contact Habteab</p>                
+                  <p className="nav-link active" aria-current="page">Contact Habteab</p>                
                   </Link>
                 </li>
               </ul>
@@ -53,31 +53,31 @@ function ContactHab() {
         <div>
           <h1>Contact Habteab</h1>
           <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Your Name*</label>
-              <input type="text" name="name" id="name" class="form-control" required/>
+            <div className="mb-3">
+              <label for="name" className="form-label">Your Name*</label>
+              <input type="text" name="name" id="name" className="form-control" required/>
             </div>
-            <div class="mb-3">
-              <label for="subject" class="form-label">Subject*</label>
-              <input type="text" name="subject" id="subject" class="form-control" required/>
+            <div className="mb-3">
+              <label for="subject" className="form-label">Subject*</label>
+              <input type="text" name="subject" id="subject" className="form-control" required/>
             </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Your Message</label>
-              <textarea name="message" id="message" class="form-control" row="3"></textarea>
+            <div className="mb-3">
+              <label for="message" className="form-label">Your Message</label>
+              <textarea name="message" id="message" className="form-control" row="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary mb-3" onClick="sendContactForm()">Submit</button>
+            <button type="submit" className="btn btn-primary mb-3" onClick="sendContactForm()">Submit</button>
           </form>
         </div>
       </div>
-      <footer class="row bg-primary p-3 text-center col-lg-8 justify-content-around mb-3">
-        <div class="col-md-3 text-light">
+      <footer className="row bg-primary p-3 text-center col-lg-8 justify-content-around mb-3">
+        <div className="col-md-3 text-light">
           1501 almaden expressway apt 6153 San Jose,CA 95125
         </div>
-        <div class="col-md-3 text-light">
+        <div className="col-md-3 text-light">
           (832)206-8163
         </div>
-        <div class="col-md-3 nav-item">
-          <a class="nav-link text-light "href="/contact-hab.html">keshi2017@gmail.com</a>
+        <div className="col-md-3 nav-item">
+          <a className="nav-link text-light "href="/contact-hab.html">keshi2017@gmail.com</a>
         </div>  
       </footer>
     </div>

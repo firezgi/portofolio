@@ -4,18 +4,18 @@ import {Link} from "react-router-dom";
 
 function Profile() {
   return <div>
-      <div class="container">
-      <div class="col-lg-12">
+      <div className="container">
+      <div className="col-lg-12">
         <nav
-          class="navbar navbar-expand-lg navbar-dark bg-primary flex-wrap h-100 align-content-center"
+          className="navbar navbar-expand-lg navbar-dark bg-primary flex-wrap h-100 align-content-center"
         >
-          <div class="container-fluid">
-            <a class="navbar-brand text-light p-lg-2" href="/">
-              <span class="fs-3">Habteab Firezgi</span><br />
+          <div className="container-fluid">
+            <a className="navbar-brand text-light p-lg-2" href="/">
+              <span className="fs-3">Habteab Firezgi</span><br />
               <small>Motivated and Dynamic Front End Developer</small>
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#mainMenu"
@@ -23,28 +23,28 @@ function Profile() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse mt-lg-5" id="mainMenu">
-              <ul class="navbar-nav ">
-                <li class="nav-item border-light border-bottom">
+            <div className="collapse navbar-collapse mt-lg-5" id="mainMenu">
+              <ul className="navbar-nav ">
+                <li className="nav-item border-light border-bottom">
                   <Link to={`/`}>
-                  <p class="nav-link active" aria-current="page" >Profile</p>
+                  <p className="nav-link active" aria-current="page" >Profile</p>
                   </Link>                  
                 </li>
-                <li class="nav-item border-light border-bottom">
+                <li className="nav-item border-light border-bottom">
                 <Link to={`/CareerDevelopment`}>
-                  <p class="nav-link " aria-current="page" >CareerDevelopment</p>
+                  <p className="nav-link " aria-current="page" >CareerDevelopment</p>
                   </Link>    
                 </li>
-                <li class="nav-item border-light border-bottom">
+                <li className="nav-item border-light border-bottom">
                   <Link to={`/Education`}>
-                  <p class="nav-link " aria-current="page">Education</p>
+                  <p className="nav-link " aria-current="page">Education</p>
                   </Link>                  
                    </li>
-                   <li class="nav-item border-light border-bottom">
+                   <li className="nav-item border-light border-bottom">
                   <Link to={`/ContactHab`}>
-                  <p class="nav-link " aria-current="page">Contact Habteab</p>                
+                  <p className="nav-link " aria-current="page">Contact Habteab</p>                
                   </Link>
                 </li>
               </ul>
@@ -53,22 +53,22 @@ function Profile() {
         </nav>
       </div>
 
-      <div class="col-lg-12">
-        <div class="bg-light m-3 p-3 border rounded-3">
+      <div className="col-lg-12">
+        <div className="bg-light m-3 p-3 border rounded-3">
           <h1>Profile</h1>
           <img
             src={hab}
             alt=""
-            class="float-md-start me-md-3 mb-md-3 mb-xs-5 w-100 d-md-none"
+            className="float-md-start me-md-3 mb-md-3 mb-xs-5 w-100 d-md-none"
           />
           <img
             src={hab}
             alt=""
-            class="float-md-start me-md-5 mb-md-3 w-50 d-none d-md-block"
+            className="float-md-start me-md-5 mb-md-3 w-50 d-none d-md-block"
           />
 
-          <p class="mb-lg-5 p-lg-4 mt-xs-5 mb-lg-5 fs-5">
-            <strong class="fs-3 ">Personal Summary</strong> <br/>
+          <p className="mb-lg-5 p-lg-4 mt-xs-5 mb-lg-5 fs-5">
+            <strong className="fs-3 ">Personal Summary</strong> <br/>
             Dynamic and passionate front-end web developer with experience in
             building responsive websites and mobile applications. Possesses a
             strong work ethic and the ability to adapt to ever-changing
@@ -80,9 +80,9 @@ function Profile() {
           </p>
 
           <p />
-          <div class="clearfix">
-            <p class="mt-lg-5 fs-3"><strong >Core Qualifications</strong></p>
-            <ul class="fs-5">
+          <div className="clearfix">
+            <p className="mt-lg-5 fs-3"><strong >Core Qualifications</strong></p>
+            <ul className="fs-5">
               <li>Excellent organization and presentation skills</li>
               <li>
                 Good experience with Windows, Linux, and MAC operating systems
@@ -114,14 +114,14 @@ function Profile() {
         </div>
       </div>
       <footer
-        class="row bg-primary p-3 text-center col-lg-12 justify-content-around mb-3"
+        className="row bg-primary p-3 text-center col-lg-12 justify-content-around mb-3"
       >
-        <div class="col-md-3 text-light">
+        <div className="col-md-3 text-light">
           1501 almaden expressway apt 6153 San Jose,CA 95125
         </div>
-        <div class="col-md-3 text-light">(832)206-8163</div>
-        <div class="col-md-3 nav-item">
-          <a class="nav-link text-light" href="contact-hab.html"
+        <div className="col-md-3 text-light">(832)206-8163</div>
+        <div className="col-md-3 nav-item">
+          <a className="nav-link text-light" href="contact-hab.html"
             >keshi2017@gmail.com</a
           >
         </div>
