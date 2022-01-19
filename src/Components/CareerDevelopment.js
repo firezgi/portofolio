@@ -1,34 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <style>
-      .navbar-toggler {
-        background-color: aqua;
-      }
-      .navbar-light .navbar-nav .nav-link.active,
-      .navbar-light .navbar-nav .show > .nav-link {
-        color: red;
-      }
-      .red-nav-link {
-        color: rgb(255, 0, 0, 0.5);
-      }
-      .navbar-light .navbar-nav .nav-link:focus,
-      .navbar-light .navbar-nav .nav-link:hover {
-        color: red;
-      }
-    </style>
-  </head>
-  <body>
+import React from 'react';
+import Decidr from "../images/Decidr.png";
+import ECard from "../images/E-Card.png";
+import Hounted from "../images/HountedHouseGame.png";
+import MarvelSpace from "../images/marvel-space.png";
+
+function CareerDevelopment() {
+  return <div>
     <div class="container">
       <div class="col-lg-12">
         <nav
@@ -82,7 +59,7 @@
         <hr/>
         <p>
           <h2>Front-End Developer</h2> <br />
-          <Strong class="fs-3">Bitwise Industries, AlphaWorks</Strong><br/>
+          <strong class="fs-3">Bitwise Industries, AlphaWorks</strong><br/>
           <p class="fs-4">Sep 2021-Current</p> 
           <ul class="fs-5">
             <li >Developed UI workflows and wireframes</li>
@@ -97,8 +74,8 @@
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/HountedHouseGame.png" class="d-block w-100" alt="...">
-                <Strong class="fs-3">Hounted House Game</Strong><br/>
+                <img src={Hounted} class="d-block w-100" alt="..."/>
+                <strong class="fs-3">Hounted House Game</strong><br/>
           <p class="fs-4">2021/</p>
           <ul class="fs-5">
             <li>learned and implemented react.js</li>
@@ -107,8 +84,8 @@
           </ul>
               </div>
               <div class="carousel-item">
-                <img src="/Decidr.png" class="d-block w-100" alt="...">
-                <Strong class="fs-3">Decidr</Strong><br/>
+                <img src={Decidr} class="d-block w-100" alt="..."/>
+                <strong class="fs-3">Decidr</strong><br/>
                 <p class="fs-4">2021/</p>
           <ul class="fs-5">
             <li>learned and implemented React-native</li>
@@ -116,8 +93,8 @@
           </ul>
               </div>
               <div class="carousel-item">
-                <img src="/E-Card.png" class="d-block w-100" alt="...">
-                <Strong class="fs-3">E-Card</Strong><br/>
+                <img src={ECard} class="d-block w-100" alt="..."/>
+                <strong class="fs-3">E-Card</strong><br/>
                 <p class="fs-4">2021/</p>
           <ul class="fs-5">
             <li>learned and implemented React-native</li>
@@ -125,8 +102,8 @@
           </ul>
               </div>
               <div class="carousel-item">
-                <img src="/marvel-space.png" class="d-block w-100 " alt="...">
-                <Strong class="fs-3">Marvel-Space</Strong><br/>
+                <img src={MarvelSpace} class="d-block w-100 " alt="..."/>
+                <strong class="fs-3">Marvel-Space</strong><br/>
                 <p class="fs-4">2021/</p>
           <ul class="fs-5">
             <li>learned and implemented React-native</li>
@@ -155,16 +132,7 @@
     </footer>
     </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
-      crossorigin="anonymous"
-      async
-    ></script>
-  </body>
-</html>
+  </div>;
+}
+
+export default CareerDevelopment;
