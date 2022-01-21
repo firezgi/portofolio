@@ -5,6 +5,7 @@ import CareerDevelopment from './Components/CareerDevelopment';
 import Education from './Components/Education';
 import ContactHab from './Components/ContactHab';
 import {HashRouter,Routes,Route} from "react-router-dom"
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </Route> 
       
       </Routes>
+      {/* <Footer/> */}
     </HashRouter>
   );
 }

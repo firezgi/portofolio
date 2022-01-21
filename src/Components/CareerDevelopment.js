@@ -4,7 +4,7 @@ import Decidr from "../images/Decidr.png";
 import ECard from "../images/E-Card.png";
 import Haunted from "../images/HountedHouseGame.png";
 import MarvelSpace from "../images/marvel-space.png";
-
+// import GitHubIcon from '@mui/icons-material/GitHub';
 function CareerDevelopment() {
   return (
     <div>
@@ -12,13 +12,13 @@ function CareerDevelopment() {
         <div className="col-lg-12">
           <nav className="navbar navbar-expand-lg navbar-dark bg-primary flex-wrap h-100 align-content-center">
             <div className="container-fluid">
-              <a className="navbar-brand text-light p-lg-2" href="/">
+              <Link className="navbar-brand text-light p-lg-2" to="/">
                 <span className="fs-3">Habteab Firezgi</span>
                 <br />
                 <small>Motivated and Dynamic Front End Developer</small>
-              </a>
+              </Link>
               <button
-                className="navbar-toggler"
+                className="navbar-toggler bg-black"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#mainMenu"
@@ -31,31 +31,35 @@ function CareerDevelopment() {
               <div className="collapse navbar-collapse mt-lg-5" id="mainMenu">
                 <ul className="navbar-nav ">
                   <li className="nav-item border-light border-bottom">
-                    <Link to={`/`}>
-                      <p className="nav-link " aria-current="page">
-                        Profile
-                      </p>
+                    <Link to={`/`} className="nav-link " aria-current="page">
+                      Profile
                     </Link>
                   </li>
                   <li className="nav-item border-light border-bottom">
-                    <Link to={`/CareerDevelopment`}>
-                      <p className="nav-link active " aria-current="page">
-                        CareerDevelopment
-                      </p>
+                    <Link
+                      to={`/CareerDevelopment`}
+                      className="nav-link active "
+                      aria-current="page"
+                    >
+                      CareerDevelopment
                     </Link>
                   </li>
                   <li className="nav-item border-light border-bottom">
-                    <Link to={`/Education`}>
-                      <p className="nav-link " aria-current="page">
-                        Education
-                      </p>
+                    <Link
+                      to={`/Education`}
+                      className="nav-link "
+                      aria-current="page"
+                    >
+                      Education
                     </Link>
                   </li>
                   <li className="nav-item border-light border-bottom">
-                    <Link to={`/ContactHab`}>
-                      <p className="nav-link " aria-current="page">
-                        Contact Habteab
-                      </p>
+                    <Link
+                      className="nav-link "
+                      aria-current="page"
+                      to={`/ContactHab`}
+                    >
+                      Contact Habteab
                     </Link>
                   </li>
                 </ul>
@@ -88,14 +92,38 @@ function CareerDevelopment() {
                   id="carouselExampleSlidesOnly"
                   className="carousel slide"
                   data-bs-ride="carousel"
-                  data-interval="2000"
+                  data-interval="1000"
                 >
                   <div className="carousel-inner">
                     <div className="carousel-item active">
                       <img src={Haunted} className="d-block w-100" alt="..." />
-                      <strong className="fs-3">Haunted House Game</strong>
-                      <br />
-                      <p className="fs-4">2021/</p>
+                      <div class="row justify-content-between">
+                        <div class="col-4">
+                          <strong className="fs-3">
+                            The Hounted House Game
+                          </strong>
+                          <p className="fs-4 ">2021/</p>
+                        </div>
+                        <div class="col-4">
+                          <a
+                            href="https://github.com/keshi2021/haunted-house-game"
+                            className="fs-2 me-5"
+                          >
+                            <i className="fab fa-github"></i>
+                          </a>
+                          <a
+                            href="http://luceroweb.github.io/haunted-house-game/"
+                            className="fs-2"
+                          >
+                            <button
+                              type="button"
+                              className="btn btn-primary p-0"
+                            >
+                              Live site
+                            </button>
+                          </a>
+                        </div>
+                      </div>
                       <ul className="fs-5">
                         <li>learned and implemented react.js</li>
                         <li>used agile methodology to manage the project </li>
@@ -107,9 +135,31 @@ function CareerDevelopment() {
                     </div>
                     <div className="carousel-item">
                       <img src={Decidr} className="d-block w-100" alt="..." />
-                      <strong className="fs-3">Decidr</strong>
-                      <br />
-                      <p className="fs-4">2021/</p>
+                      <div class="row justify-content-between">
+                        <div class="col-4">
+                          <strong className="fs-3">E-Card</strong>
+                          <p className="fs-4 ">2021/</p>
+                        </div>
+                        <div class="col-4">
+                          <a
+                            href="https://github.com/keshi2021/decidr"
+                            className="fs-2 me-5"
+                          >
+                            <i className="fab fa-github"></i>
+                          </a>
+                          <a
+                            href="https://keshi2021.github.io/decidr"
+                            className="fs-2"
+                          >
+                            <button
+                              type="button"
+                              className="btn btn-primary p-0"
+                            >
+                              Live site
+                            </button>
+                          </a>
+                        </div>
+                      </div>
                       <ul className="fs-5">
                         <li>learned and implemented React-native</li>
                         <li>used agile methodology to manage the project </li>
@@ -117,23 +167,68 @@ function CareerDevelopment() {
                     </div>
                     <div className="carousel-item">
                       <img src={ECard} className="d-block w-100" alt="..." />
-                      <strong className="fs-3">E-Card</strong>
-                      <br />
-                      <p className="fs-4">2021/</p>
+
+                      <div class="row justify-content-between">
+                        <div class="col-4">
+                          <strong className="fs-3">E-Card</strong>
+                          <p className="fs-4 ">2021/</p>
+                        </div>
+                        <div class="col-4">
+                          <a
+                            href="https://github.com/keshi2021/ecard"
+                            className="fs-2 me-5"
+                          >
+                            <i className="fab fa-github"></i>
+                          </a>
+                          <a
+                            href="https://keshi2021.github.io/ecard"
+                            className="fs-2"
+                          >
+                            <button
+                              type="button"
+                              className="btn btn-primary p-0"
+                            >
+                              Live site
+                            </button>
+                          </a>
+                        </div>
+                      </div>
                       <ul className="fs-5">
-                        <li>learned and implemented React-native</li>
+                        <li>learned and implemented React</li>
                         <li>used agile methodology to manage the project </li>
                       </ul>
                     </div>
                     <div className="carousel-item ">
                       <img
                         src={MarvelSpace}
-                        className="d-block w-25  mx-auto "
+                        className="d-block w-25  mx-auto rounded "
                         alt="..."
                       />
-                      <strong className="fs-3">Marvel-Space</strong>
-                      <br />
-                      <p className="fs-4">2021/</p>
+                      <div class="row justify-content-between">
+                        <div class="col-4">
+                          <strong className="fs-3">Marvel Space</strong>
+                          <p className="fs-4 ">2021/</p>
+                        </div>
+                        <div class="col-4">
+                          <a
+                            href="https://github.com/keshi2021/team-spider-man"
+                            className="fs-2 me-5"
+                          >
+                            <i className="fab fa-github"></i>
+                          </a>
+                          <a
+                            href="http://keshi2021.github.io/team-spider-man"
+                            className="fs-2"
+                          >
+                            <button
+                              type="button"
+                              className="btn btn-primary p-0 "
+                            >
+                              Live Site
+                            </button>
+                          </a>
+                        </div>
+                      </div>
                       <ul className="fs-5">
                         <li>learned and implemented React-native</li>
                         <li>used agile methodology to manage the project </li>
@@ -152,9 +247,9 @@ function CareerDevelopment() {
             </div>
             <div className="col-md-3 text-light">(832)206-8163</div>
             <div className="col-md-3 nav-item">
-              <a className="nav-link text-light " href="contact-hab.html">
+              <Link className="nav-link text-light" to={`/ContactHab`}>
                 keshi2017@gmail.com
-              </a>
+              </Link>
             </div>
           </footer>
         </div>

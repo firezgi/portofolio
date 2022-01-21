@@ -4,51 +4,50 @@ import { Link } from 'react-router-dom';
 function Education() {
   return <div>
       <div className="container">
-      <nav
-        className="navbar navbar-expand-lg navbar-dark bg-primary flex-wrap h-100 align-content-center"
-      >
-        <div className="container-fluid">
-          <a className="navbar-brand text-light p-lg-2" href="/">
-            <span className="fs-3">Habteab Firezgi</span><br />
-            <small>Motivated and Dynamic Front End Developer</small>
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainMenu"
-            aria-controls="mainMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse mt-lg-5" id="mainMenu">
-          <ul className="navbar-nav ">
-                <li className="nav-item border-light border-bottom">
-                  <Link to={`/`}>
-                  <p className="nav-link " aria-current="page" >Profile</p>
-                  </Link>                  
-                </li>
-                <li className="nav-item border-light border-bottom">
-                <Link to={`/CareerDevelopment`}>
-                  <p className="nav-link " aria-current="page" >CareerDevelopment</p>
-                  </Link>    
-                </li>
-                <li className="nav-item border-light border-bottom">
-                  <Link to={'/Education'}>
-                  <p className="nav-link active" aria-current="page">Education</p>
-                  </Link>                  
-                   </li>
-                   <li className="nav-item border-light border-bottom">
-                  <Link to={`/ContactHab`}>
-                  <p className="nav-link " aria-current="page">Contact Habteab</p>                
-                  </Link>
-                </li>
-              </ul>
-          </div>
-        </div>
-      </nav>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary flex-wrap h-100 align-content-center">
+            <div className="container-fluid">
+            <Link className="navbar-brand text-light p-lg-2" to="/">
+                <span className="fs-3">Habteab Firezgi</span>
+                <br />
+                <small>Motivated and Dynamic Front End Developer</small>
+              </Link>
+              <button
+                className="navbar-toggler bg-black"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainMenu"
+                aria-controls="mainMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse mt-lg-5" id="mainMenu">
+                <ul className="navbar-nav ">
+                  <li className="nav-item border-light border-bottom">
+                    <Link to={`/`} className="nav-link " aria-current="page">                      
+                        Profile
+                    </Link>
+                  </li>
+                  <li className="nav-item border-light border-bottom">
+                    <Link to={`/CareerDevelopment`} className="nav-link" aria-current="page">
+                        CareerDevelopment                      
+                    </Link>
+                  </li>
+                  <li className="nav-item border-light border-bottom">
+                    <Link to={`/Education`} className="nav-link action" aria-current="page">                      
+                        Education                      
+                    </Link>
+                  </li>
+                  <li className="nav-item border-light border-bottom">
+                    <Link className="nav-link " aria-current="page" to={`/ContactHab`}>                      
+                        Contact Habteab                      
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     
     <div className="col-lg-12">
       <div className="bg-light m-3 p-3 border rounded-3">
@@ -82,8 +81,10 @@ function Education() {
         (832)206-8163
       </div>
       <div className="col-md-3 nav-item">
-        <a className="nav-link text-light "href="contact-hab.html">keshi2017@gmail.com</a>
-      </div>  
+          <Link className="nav-link text-light" to={`/ContactHab`}>                      
+          keshi2017@gmail.com                     
+                    </Link>
+        </div>   
     </footer>
     </div>
     
