@@ -2,6 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function ContactHab() {
+  const sendContactForm =()=>{
+    const name = document.getElementById('name').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    let mailto = `mailto:keshi2017@gmail.com`;
+    mailto += `?subject=${subject}`;
+    mailto +=`& body=${message}`;
+    window.open(mailto);    
+    };
   return <div>
       <div className="container">
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary flex-wrap h-100 align-content-center">
@@ -64,7 +74,10 @@ function ContactHab() {
               <label for="message" className="form-label">Your Message</label>
               <textarea name="message" id="message" className="form-control" row="3"></textarea>
             </div>
-            <button type="submit" className="btn btn-primary mb-3" onClick="sendContactForm()">Submit</button>
+            <button type="submit" className="btn btn-primary mb-3" onClick={sendContactForm}
+            
+            
+            >Submit</button>
           </form>
         </div>
       </div>
