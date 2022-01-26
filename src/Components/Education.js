@@ -63,7 +63,7 @@ function Education() {
             Cupertino,CA- October2017 to july2019:<br />
           Pursued Associated degree in Computer science        
           </p>
-          <strong className="fs-4">Evangadi Tech</strong> 
+          <strong className="fs-4">Evangadi Networks</strong> 
           <p className="fs-5">
           Feb2021 to Aug2021:<br />
           Bootcamp :Full-stack web-development        
